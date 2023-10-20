@@ -33,12 +33,20 @@ a{
 }
 /* #endregion basic elements */
 
-/* #debug */
+/* #region debug */
 .debug header{
     height: 100px;
 }
+.debug main .container{
+    height: 300px;
+    background-color: pink;
+}
+.debug .col{
+    border: 1px solid black;
+}
+/* #endregion debug */
+/* #region header */
 
-/* #end region debug */
 nav{
     padding: 10px;   
 }
@@ -56,4 +64,46 @@ header{
     background-color: white;
     border-radius: 15%;
     padding: 10px;
+}
+/* #endregion header */
+
+.row{
+    flex-wrap: wrap;
+    margin-top: 20px;
+   
+}
+.col-large{
+    width: calc(100% / 3 * 2); 
+    background-color: var(--bg-panel);
+    border-radius: 10px;
+    } 
+.row .col-thin{
+    width: calc(100% / 3); 
+    background-color: var(--bg-panel);
+}
+.title-panel{
+    color: var(--primary);
+    font-size: smaller;
+}
+.text-panel{
+    
+    font-size: smaller;
+}
+
+.a-store{
+    color: white;
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 5px 30px;
+    display: inline-block;
+    margin: 20px 0;
+}
+#ap-text{
+    color: white;
+    font-size: small;
+}
+.phone{
+    width: 30%;
+    height: 70%;
+    margin-top: 60px;
 }
