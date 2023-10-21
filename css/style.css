@@ -106,7 +106,7 @@ section.planning{
     width: calc(100%/12*6)
 }
 /* #endregion section planning */
-
+/* #region testimonials */
 section.testimonials{
     background-color: white;   
 }
@@ -116,9 +116,17 @@ section.testimonials{
     margin: 10px;
 }
 
+/* #endregion testimonials */
 
-
-
+section.benefits{
+    background-color: var(--secondary);
+}
+.benefits h4{
+    text-align: center;
+}
+.benefits .col-4 h3, p{
+    background-color: white;
+}
 /* 
 <i class="fa-solid fa-bullhorn"></i>
 <i class="fa-solid fa-laptop-code"></i>
