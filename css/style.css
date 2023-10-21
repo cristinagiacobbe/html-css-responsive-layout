@@ -34,15 +34,18 @@ a{
 
 /* #region debug */
 .debug header{
-    height: 100px;
+    height: 65px;
 }
-.debug main .container{
-    height: 300px;
+.debug main .container{    
     background-color: pink;
 }
 .debug [class^="col"]{
     border: 1px solid black;
 }
+.debug.col-6{
+    border: 1px solid black;
+}
+
 /* #endregion debug */
 /* #region header */
 
@@ -66,7 +69,10 @@ header{
     padding: 10px;
 }
 /* #endregion header */
-
+/* #region section demo */
+section.demo{
+    background-color: white;
+}
 .row{
     flex-wrap: wrap;
     margin: 10px -10px;
@@ -90,6 +96,28 @@ h3{
 p{
     border-radius: 00 0 10px 10px;
 }
+/* #endregion section demo */
+
+/* #region section plannig */
+section.planning{
+    background-color: var(--secondary);
+}
+.col-6{
+    width: calc(100%/12*6)
+}
+/* #endregion section planning */
+
+section.testimonials{
+    background-color: white;   
+}
+.Nat, .Celia, .Bob{
+    background-color: var(--secondary);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
 
 /* 
 <i class="fa-solid fa-bullhorn"></i>
