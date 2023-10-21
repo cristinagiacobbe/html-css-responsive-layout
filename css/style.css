@@ -70,26 +70,33 @@ header{
 .row{
     flex-wrap: wrap;
     margin-top: 20px;
-   
+    gap: 5px;
 }
-.col-large{
-    width: calc(100% / 3 * 2); 
+[class^="col"]{
     background-color: var(--bg-panel);
     border-radius: 10px;
+}
+.col-large{
+    width: calc(100% / 3 * 2 - 5px);     
+    
     } 
 .row .col-thin{
-    width: calc(100% / 3); 
-    background-color: var(--bg-panel);
+    width: calc(100% / 3);    
+}
+.col-thin{
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
 }
 .title-panel{
     color: var(--primary);
     font-size: smaller;
+    font-weight: bold;
 }
 .text-panel{
-    
+    margin: 10px 0;
     font-size: smaller;
 }
-
 .a-store{
     color: white;
     background-color: var(--primary);
@@ -105,5 +112,25 @@ header{
 .phone{
     width: 30%;
     height: 70%;
-    margin-top: 60px;
+    margin-top: 75px;
 }
+.demo-panel{
+    padding: 20px;
+}
+.code{
+    text-align: center;
+}
+.fa-file-code{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* 
+<i class="fa-solid fa-compass-drafting"></i>
+<i class="fa-solid fa-bullhorn"></i>
+<i class="fa-solid fa-laptop-code"></i>
+<i class="fa-solid fa-arrow-down"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-solid fa-quote-left"></i>
+<i class="fa-solid fa-quote-right"></i> */
