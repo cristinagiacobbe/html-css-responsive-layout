@@ -140,6 +140,13 @@ section.free{
     text-align: center;
 }
 /* #endregion free */
+/* #footer */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
 
 
 /* 
