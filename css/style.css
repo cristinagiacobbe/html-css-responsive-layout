@@ -86,7 +86,7 @@ section.demo{
 .col-4{
     width: calc(100%/12*4);
 }
-h3, p{
+.demo h3, p{
     background-color: var(--bg-panel); 
    padding: 10px; 
 }
@@ -118,15 +118,21 @@ section.testimonials{
 
 /* #endregion testimonials */
 
+/* #region benefits */
 section.benefits{
     background-color: var(--secondary);
 }
 .benefits h4{
     text-align: center;
 }
-.benefits .col-4 h3, p{
+
+/* #endregion benefits */
+
+/* #region about-us */
+section.about-us{
     background-color: white;
 }
+
 /* 
 <i class="fa-solid fa-bullhorn"></i>
 <i class="fa-solid fa-laptop-code"></i>
