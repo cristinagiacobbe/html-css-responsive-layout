@@ -132,6 +132,15 @@ section.benefits{
 section.about-us{
     background-color: white;
 }
+/* #endregion about-us */
+
+/* #region free */
+section.free{
+    background-color: var(--secondary);
+    text-align: center;
+}
+/* #endregion free */
+
 
 /* 
 <i class="fa-solid fa-bullhorn"></i>
