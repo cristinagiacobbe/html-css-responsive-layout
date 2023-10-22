@@ -79,22 +79,18 @@ section.demo{
 }
 [class^="col"]{    
     padding: 10px;    
+    border-radius: 10px;
 }
 .col-8{
     width: calc(100%/12*8);
-}
+    }
 .col-4{
     width: calc(100%/12*4);
 }
-.demo h3, p{
-    background-color: var(--bg-panel); 
-   padding: 10px; 
-}
-h3{
-    border-radius: 10px 10px 0 0;
-}
-p{
-    border-radius: 00 0 10px 10px;
+.column-content-demo{
+    background-color: var(--bg-panel);
+    min-height: 300px;
+    
 }
 /* #endregion section demo */
 
@@ -140,13 +136,13 @@ section.free{
     text-align: center;
 }
 /* #endregion free */
-/* #footer */
+/* #region footer */
 footer{
     background-color: black;
     color: white;
     text-align: center;
 }
-
+/* #endregion footer */
 
 
 /* 
