@@ -68,29 +68,51 @@ header{
     border-radius: 15%;
     padding: 10px;
 }
+.bar{
+    color: white;
+    display: none;
+}
 /* #endregion header */
 /* #region section demo */
 section.demo{
     background-color: white;
 }
 .row{
-    flex-wrap: wrap;
     margin: 10px -10px;
+    gap: 5px;
+    flex-wrap: wrap;
 }
-[class^="col"]{    
+[class^="col-"]{    
     padding: 10px;    
     border-radius: 10px;
+    background-color: var(--bg-panel);
 }
 .col-8{
-    width: calc(100%/12*8);
+    width: calc(100%/12*8 - 10px);
+    
     }
 .col-4{
-    width: calc(100%/12*4);
+    width: calc(100%/12*4 - 10px);
 }
-.column-content-demo{
-    background-color: var(--bg-panel);
-    min-height: 300px;
-    
+
+.apple-store{
+    color: white;  
+    margin-top: 10px;  
+    padding: 5px 10px;
+    gap: 10px; 
+    border-radius: 10px;
+    background-color: var(--primary);
+    display: inline-block;   
+}
+.a-store{
+    color: white;
+    font-size: small;
+}
+.phone-img{
+    padding-top: 30px;
+}
+.phone-img img{
+    width: 90%;        
 }
 /* #endregion section demo */
 
@@ -144,11 +166,34 @@ footer{
 }
 /* #endregion footer */
 
+/* #region responsive layout */
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }   
+}
+@media screen and (max-width: 768px) {
+    .bar{
+        color: white;
+        display: inline;
+    }   
+}
+@media screen and (max-width: 768px) {
+    .col-8{        
+        flex-wrap: wrap;
+    }   
+}
+
+
+
 
 /* 
+<i class="fa-brands fa-apple"></i>
+<i class="fa-solid fa-bars"></i>
 <i class="fa-solid fa-bullhorn"></i>
 <i class="fa-solid fa-laptop-code"></i>
 <i class="fa-solid fa-arrow-down"></i>
 <i class="fa-brands fa-linkedin"></i>
 <i class="fa-solid fa-quote-left"></i>
-<i class="fa-solid fa-quote-right"></i> */
+<i class="fa-solid fa-quote-right"></i> 
+*/
