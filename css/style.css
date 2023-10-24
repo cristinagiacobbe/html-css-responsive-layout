@@ -147,7 +147,7 @@ section.planning{
     background-color: var(--secondary);
 }
 .col-6{
-    width: calc(100% / 12 * 6)    
+    width: calc(100% / 12 * 6 - 20px);    
 }
 
 .col-6 img{
@@ -166,6 +166,7 @@ section.planning{
     background-color: white;
     border-radius: 15px;
     margin-top: 300px;
+    margin-bottom: 20px;
 }
 
 .right .fa-solid{
@@ -241,6 +242,17 @@ footer{
     }   
 }
 
+@media screen and (max-width: 768px) {
+    .col-6{        
+        width: 100%;
+    }   
+    .right{
+        margin-top: 10px;
+    }
+    .container{
+        width: 90%;
+    }
+}
 @media screen and (max-width: 480px) {
     .col-8{
         width: 100%;
@@ -250,6 +262,7 @@ footer{
         width: 100%;
         margin: 10px 0;
     }
+    
 }
 /* #endregion responsive layout */
 
