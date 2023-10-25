@@ -292,6 +292,8 @@ footer{
         width: 90%;
     }
 }
+
+
 @media screen and (max-width: 480px) {
     .col-8{
         width: 100%;
@@ -300,8 +302,16 @@ footer{
     .col-4{
         width: 100%;
         margin: 10px 0;
+    }    
+}
+@media screen and (max-width: 480px) {
+    .card{
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    
+    .card img{
+        width: 100%;
+        }
 }
 /* #endregion responsive layout */
 
