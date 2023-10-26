@@ -16,6 +16,10 @@
 .al-c{
     align-items: center;
 }
+
+.column{
+    flex-direction: column;
+}
 /* #endregion utility */
 
 /* #region basic elements */
@@ -45,8 +49,12 @@ a{
 .debug.col-6{
     border: 1px solid black;
 }
+.debug .about-us .col-4{
+    border: 1px solid black;
+}
 
 /* #endregion debug */
+
 /* #region header */
 
 nav{
@@ -76,6 +84,7 @@ header{
     display: none;
 }
 /* #endregion header */
+
 /* #region section demo */
 section.demo{
     background-color: white;
@@ -88,13 +97,13 @@ section.demo{
     color: var(--primary);
     font-weight: bold;
 }
-[class^="col-"]{    
+.demo [class^="col-"]{    
     padding: 10px;    
     border-radius: 10px;    
     margin: 10px 10px;
 }
 
-.col-4, .col-8{
+.demo .col-4, .demo .col-8{
     background-color: var(--bg-panel);
 }
 
@@ -104,6 +113,9 @@ section.demo{
 
 .col-4{
     width: calc(100% / 12 * 4 - 20px);
+}
+
+.demo .col-4{
     text-align: center;
     padding: 20px;
     flex-shrink: 0;
@@ -181,21 +193,22 @@ section.planning{
     align-items: flex-end;
 }
 /* #endregion section planning */
+
 /* #region testimonials */
 section.testimonials{
     background-color: white;   
 }
 
-.introduction-text{
+.introduction{
     text-align: center;
     padding: 30px;
 }
 
-.introduction-text h5{
+.introduction h5{
     text-transform: uppercase;
 }
 
-.introduction-text h2{
+.introduction h2{
     padding: 20px;
     color: var(--secondary);
     font-weight: bold;
@@ -243,8 +256,58 @@ section.benefits{
 /* #endregion benefits */
 
 /* #region about-us */
+
 section.about-us{
     background-color: white;
+}
+
+.about-us .row{
+    margin: 20px 0;
+}
+
+.about-us h1{
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+.about-us p{
+    margin-top: 20px;
+}
+
+.about-us .col-4 img{
+    width: 50%;
+    border-radius: 50%;      
+}
+
+.about-us .col-4 .immagine{
+    
+}
+
+.about-us .col-4 .fa-solid{    
+    top:0;
+    right: 0;
+}
+
+.about-us .col-4, .col-8{
+    text-align: left;
+    padding: 10px;
+}
+
+.about-us .col-4 p{
+    margin: 10px;
+}
+
+.linkedin{
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    display: inline;
+}
+
+.linkedin a{
+    color: white;
 }
 /* #endregion about-us */
 
@@ -254,6 +317,7 @@ section.free{
     text-align: center;
 }
 /* #endregion free */
+
 /* #region footer */
 footer{
     background-color: black;
@@ -289,17 +353,22 @@ footer{
         margin-top: 10px;
     }
     .container{
-        width: 90%;
+        width: 90%;    
+        margin: auto;  
     }
 }
 
 
 @media screen and (max-width: 480px) {
-    .col-8{
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .demo .col-8{
         width: 100%;
         margin: 10px 0;
     }
-    .col-4{
+    .demo .col-4{
         width: 100%;
         margin: 10px 0;
     }    
@@ -308,11 +377,24 @@ footer{
     .card{
         flex-wrap: wrap;
         justify-content: center;
+        flex-shrink: 0;
     }
     .card img{
-        width: 100%;
+        width: 90%;        
         }
 }
+
+@media screen and (max-width: 480px) {
+    .about-us .col-8, .col-4{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
 /* #endregion responsive layout */
 
 
@@ -331,4 +413,5 @@ footer{
 <i class="fa-brands fa-linkedin"></i>
 <i class="fa-solid fa-quote-left"></i>
 <i class="fa-solid fa-quote-right"></i> 
+
 */
